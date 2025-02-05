@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for문</title>
+  </head>
+  <body>
+    <!-- for(초깃값; 조건; 증가식 ) {} -->
+    <script>
+      // console.log("안녕하세요");
+      // console.log("안녕하세요");
+      // console.log("안녕하세요");
+      // console.log("안녕하세요");
+      // console.log("안녕하세요");
+      // 다섯개 찍힘 위에거랑 같은 값
+      //   for (let i = 0; i < 5; i++) {
+      //     console.log("안녕하세요");
+      //   }
+      // let i;
+      let num = 0;
+      for (let i = 1; 1 < 6; i++) {
+        // console.log(i);
+        num += i;
+      }
+      let sum = 0;
+      sum += 1;
+      sum += 2;
+      sum += 3;
+      sum += 4;
+      sum += 5;
+      console.log(sum);
+
+      document.write(`1부터 100까지 더한 합은 ${num}`);
+      // 0부터 10까지 출력해주세요 , i <= 10은 10과 작거나 같거나
+      for (let i = 0; i <= 10; i++) {
+        // console.log(i);
+        document.write(`${i} <br>`);
+      }
+      // 웹퍼블리셔가 되자!!! 3번 출력해주세요
+      for (let i = 1; i <= 3; i++) {
+        document.write(`웹퍼블리셔가 되자!! <br>`);
+      }
+      for (let i = 0; i <= 9; 1++){
+        for(let i = 0; i < 30; i++ ){
+          document.write(`*`);
+        }
+        document.write(`<br>`)
+      }
+      // 구구단 2단 출력
+      for(let i =1; i <= 9; i++){
+        document.write(`2 x ${i} = ${2 * i} <br>`)
+      }
+    </script>
+  </body>
+</html>
