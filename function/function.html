@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>함수</title>
+  </head>
+  <body>
+    <button onclick="greeting('파덕')">클릭</button>
+    <!-- 함수 재사용 -->
+    <button onclick="greeting('파덕파덕')">안녕</button>
+    <script>
+      function greeting(name) {
+        let message1 = `안녕하세요 ${name}`
+        alert(message1)
+      }
+      //   greeting()
+      let message = greeting("별");
+      
+    </script>
+  </body>
+</html>
