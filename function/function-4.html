@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>함수 재사용</title>
+    <style>
+      .content {
+        display: none;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">박스1 열기</button>
+    <button id="btn2">박스2 열기</button>
+    <button id="btn3">박스3 열기</button>
+    <div id="box1" class="content">박스1 내용</div>
+    <div id="box2" class="content">박스2 내용</div>
+    <div id="box3" class="content">박스3 내용</div>
+    <script>
+      // 재사용 할 여닫기 기능 함수
+      function show(id) {
+        console.log(id);
+        let element = document.querySelector(id);
+        console.log(element);
+        if (element.style.display === "none" || element.style.display === "") {
+          element.style.display = "block";
+        } else {
+          element.style.display = "none";
+        }
+      }
+      // 각 버튼을 클릭했을 떄 함수
+      //   버튼 1 클릭했을 때
+      let btn1 = document.querySelector("#btn1");
+      btn1.addEventListener("click", function () {
+        show("#box1");
+      });
+      //   버튼 2
+      let btn2 = document.querySelector("#btn2");
+      btn2.addEventListener("click", function () {
+        show("#box2");
+      });
+      //  버튼 3
+      let btn3 = document.querySelector("#btn3");
+      btn3.addEventListener("click", function () {
+        show("#box3");
+      });
+    </script>
+  </body>
+</html>
